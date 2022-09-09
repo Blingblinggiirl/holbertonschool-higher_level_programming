@@ -5,9 +5,9 @@ if number > 0:
     last_digit = -(-number % 10)
 else:
     last_digit = number % 10
-if last_digit % 10 > 5:
+if last_digit > 5:
     print(f"Last digit of {number} is {last_digit} and is grater than 5")
-elif number % 10 <= 5:
+elif number <= 5:
     print(f"Last digit of {number} is {last_digit} and is less than 6 and not 0")
 
 
