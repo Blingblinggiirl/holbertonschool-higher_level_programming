@@ -2,7 +2,8 @@
 import random
 number = random.randint(-10000, 10000)
 if number % 10 == 0:
-    print(f"0")
+    last_digit = number % 10
+    print(f"The last digit of {number} is {last_digit} and is 0")
 
 
 
