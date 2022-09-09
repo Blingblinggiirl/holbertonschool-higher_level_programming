@@ -6,8 +6,8 @@ if number < 0:
 else:
     last_digit = number % 10
 if last_digit > 5:
-    strn = "and is grater than 5"
-elif number <= 5:
+    strn = "and is greater than 5"
+elif number <= 5 and number != 0:
     strn = "and is less than 6 and not 0"
 else:
     strn = "and is 0"
