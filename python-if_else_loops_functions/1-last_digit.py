@@ -6,10 +6,13 @@ if number > 0:
 else:
     last_digit = number % 10
 if last_digit > 5:
-    str_to_print = "and is grater than 5"
+    strn = "and is grater than 5"
 elif number <= 5:
-    str_to_print = "and is less than 6 and not 0"
-print(f"Last digit of {number} is {last_digit} {str_to_print}")
+    strn = "and is less than 6 and not 0"
+else:
+    strn = "and is 0"
+    
+print(f"Last digit of {number} is {last_digit} {strn}")
 
 
 #number_string = repr(number)
