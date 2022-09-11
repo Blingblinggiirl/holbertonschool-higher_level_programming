@@ -7,3 +7,5 @@ for i in range(0, 100):
             continue
         else:
             print("{:02d}".format(i), end=', ')
+        if (i == 89):
+            print(i, end='')
