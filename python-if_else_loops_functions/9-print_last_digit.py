@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 def print_last_digit(number):
     for number in range(0, ):
         if number < 0:
