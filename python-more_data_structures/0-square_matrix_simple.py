@@ -1,4 +1,4 @@
-#!/usr/bi/python3
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     if matrix:
         for row in matrix:
