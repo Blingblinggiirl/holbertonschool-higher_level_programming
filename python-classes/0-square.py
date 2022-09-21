@@ -1,5 +1,5 @@
 #!/usr/bin/python3
+""" frist task - make a square"""
 class Square:
-    """THIS FUNCTION DOES NOTHING"""
+    """ named the class square and this does nothing """
     pass
-Square()
