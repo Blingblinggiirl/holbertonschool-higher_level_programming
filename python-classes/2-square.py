@@ -3,10 +3,10 @@
 
 
 class Square:
-    """ size things """
-    def __init__(self, size=0):
-        if isinstance(size, int): #to indicate if is not an int
-            TypeError("size must be an integer")
-        if size > 1:
-            ValueError("size must be >= 0")
+  """ size things """
+  def __init__(self, size=0):
+    if is not isinstance(size, int): #to indicate if is not an int
+      TypeError("size must be an integer")
+    if size > 1:
+      ValueError("size must be >= 0")
     self.__size = size
