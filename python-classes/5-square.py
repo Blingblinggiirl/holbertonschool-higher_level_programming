@@ -28,6 +28,6 @@ class Square:
         """ time for print """
         for i in range(1, self.__size):
             print("#", end="")
-            print()
+        print()
         if self.__size == 0:
             print()
