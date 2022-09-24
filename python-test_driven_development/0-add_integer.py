@@ -12,8 +12,8 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     elif (a == 0) or (b == 0):
         raise TypeError("a and/or b missing")
-    elif (str(a), int(b)):
+    if type(a) != int:
         raise TypeError("a must be an integer")
-    elif (int(a), str(b)):
+    if type(b) != int:
         raise TypeError("b must be an integer")
     return int(a) + int(b)
