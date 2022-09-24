@@ -10,9 +10,9 @@ def add_integer(a, b=98):
         a = int(a)
     if type(b) == float:
         b = int(b)
-    elif (a is not isinstance(a, int) or (not isinstance(a, float))):
+    if type(a) != int:
         raise TypeError("a must be an integer")
-    elif (b is not isinstance(b, int) or (not isinstance(b, float))):
+    if type(b) != int:
         raise TypeError("b must be an integer")
     elif (a == 0) or (b == 0):
         raise TypeError("a and/or b missing")
