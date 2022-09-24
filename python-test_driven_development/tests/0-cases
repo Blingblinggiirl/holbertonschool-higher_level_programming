@@ -1,0 +1,6 @@
+Cases were code 0 can fail:
+>if a or b arent int or float
+>if a or b are none
+>if a or b are both none
+>if arguments are most than 2
+>if a or b are float, they need to be converted int
