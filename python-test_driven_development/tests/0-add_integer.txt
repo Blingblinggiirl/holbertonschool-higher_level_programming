@@ -6,7 +6,7 @@ Using ''add_integer''
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>> add_integer("holberton", 12)
+>>> add_integer("holberton")
 Traceback (most recent call last):
 TypeError: a must be an integer
 
