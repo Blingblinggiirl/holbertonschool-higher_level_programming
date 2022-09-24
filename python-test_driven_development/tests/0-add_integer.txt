@@ -8,7 +8,7 @@ Using ''add_integer''
 
 >>> add_integer("holberton", 12)
 Traceback (most recent call last):
-TypeError: a is not an integer
+TypeError: a must be an integer
 
 >>> add_integer(3, "hello")
 Traceback (most recent call last):
