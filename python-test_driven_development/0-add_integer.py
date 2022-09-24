@@ -6,15 +6,14 @@ def add_integer(a, b=98):
     """ is not int or float, error """
     if (int(a), int(b)):
         return a + b
-    elif (a is not isinstance(a, int) and (not isinstance(a, float))):
+    elif (a is not isin0stance(a, int) and (not isinstance(a, float))):
         raise TypeError("a must be an integer")
     elif (b is not isinstance(b, int) and (not isinstance(b, float))):
         raise TypeError("b must be an integer")
     elif (a == 0) or (b == 0):
         raise TypeError("a and/or b missing")
-    elif type(a) != int:
+    if type(a) != int:
         raise TypeError("a must be an integer")
-    elif type(b) != int:
+    if type(b) != int:
         raise TypeError("b must be an integer")
-    if 
     return int(a) + int(b)
