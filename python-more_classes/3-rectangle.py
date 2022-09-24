@@ -46,3 +46,10 @@ class Rectangle:
             return 0
         else:
             return self.__width + self.__width + self.__height + self.__height
+    def print(self):
+        """time to print"""
+        for i in range(self.__width):
+            for j in range(self.__height):
+                print("#", end="")
+        if self.__width == 0 or self.__height == 0:
+            print()
