@@ -26,9 +26,9 @@ class Square:
     def area(self):
         """get the area of the square """
         return(self.__size * self.__size)
-    
+
     def my_print(self):
-        """ time to print th square """
+        """Prints the square with the # character"""
         if self.__size > 0:
             for i in range(0, self.__position[1]):
                 print()
@@ -41,3 +41,4 @@ class Square:
                 print()
         if self.__size == 0:
             print()
+    
