@@ -6,11 +6,11 @@ Using ''add_integer''
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>> add_integer("string", 12)
+>>> add_integer("12", 12)
 Traceback (most recent call last):
 TypeError: a is not an integer
 
->>> add_integer(12, "string")
+>>> add_integer(12, "12")
 Traceback (most recent call last):
 TypeError: b is not an integer
 
