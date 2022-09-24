@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    class Square 
+    class Square
 """
 
 
@@ -59,4 +59,3 @@ class Square:
                 print()
         if self.__size == 0:
             print()
-    
