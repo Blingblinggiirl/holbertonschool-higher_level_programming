@@ -6,11 +6,11 @@ Using ''add_integer''
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>> add_integer("12", 12)
+>>> add_integer("Holberton", 12)
 Traceback (most recent call last):
 TypeError: a is not an integer
 
->>> add_integer(12, "12")
+>>> add_integer(12, "Holberton")
 Traceback (most recent call last):
 TypeError: b is not an integer
 
@@ -44,10 +44,5 @@ TypeError: catch more than two arguments
 >>> add_integer(24, -36.2)
 12
 
->>> add_integer(6, "6")
-Traceback (most recent call last):
-TypeError: b is not an integer
-
->>> add_integer("6", 6)
-Traceback (most recent call last):
-TypeError: a is not an integer
+>>> add_integer(12.2, 12.2)
+24
