@@ -1,0 +1,9 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided(matrix, div)``
+-------------------
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+	>>> matrix_divided([[1, 2, 22], [4, 12, 6]], 24)
+
