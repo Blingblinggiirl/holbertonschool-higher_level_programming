@@ -5,5 +5,28 @@ Using ``matrix_divided(matrix, div)``
 -------------------
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-	>>> matrix_divided([[1, 2, 22], [4, 12, 6]], 24)
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
+>>> matrix_divided()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing ne or more arguments
+
+>>> matrix_divided([[1, 2, 3],[4, 5, 6]], "holberton")
+    Traceback (most recent call last):
+    TypeError: argument div is not a number, please write a number.
+    
+>>> matrix_divided([[1, 2, 3],[4, 5, 6]], 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+>>> matrix_divided("School", 3)
+    Traceback (most recent call last):
+    TypeError: Please insert a matrix of intergers/floats, it cant be a otherwise
+
+>>> matrix_divided([[1, 2],[1, 9, 9]], 3)
+    Traceback (most recent call last):
+    TypeError: size of row does not maatch!
+    
+>>> matrix_divided([[1, 2, 3],[4, 5, 6]], float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
