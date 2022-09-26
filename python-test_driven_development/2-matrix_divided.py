@@ -5,7 +5,7 @@
 def matrix_divided(matrix, div):
     """divided a matrix"""
     length_matrix = len(matrix[0])
-    or row in matrix:
+    for row in matrix:
         if length_matrix != len(row):
             raise TypeError("Each row of the matrix must have the same size")
 
@@ -20,6 +20,6 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    matriz_dividida = matrix.copy()
-    matriz_dividida = [list(map(lambda x: round(x / div, 2), roow)) for roow in matrix]
-    return matriz_dividida
+    second_matrix = matrix.copy()
+    second_matrix = [list(map(lambda x: round(x / div, 2), roow)) for roow in matrix]
+    return second_matrix
