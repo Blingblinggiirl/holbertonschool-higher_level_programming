@@ -4,5 +4,5 @@
 
 def read_file(filename=""):
     """ reads a UTF 8 and print it """
-    with open(filename, 'r', encoding= 'UTF-8') as file:
+    with open(filename, 'r', encoding='UTF-8') as file:
         print(file.read(), end="")
