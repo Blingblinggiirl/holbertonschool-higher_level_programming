@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Task 8 """
+""" Rectancle class """
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
