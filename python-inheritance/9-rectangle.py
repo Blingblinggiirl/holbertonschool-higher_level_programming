@@ -16,6 +16,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(name + " must be greater than 0")
 
+
 class Rectangle(BaseGeometry):
     """Class that define a new class based on BaseGeometry class"""
 
