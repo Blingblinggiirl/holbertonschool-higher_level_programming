@@ -15,7 +15,7 @@ Exception: area() is not implemented
 
 >>> bg.integer_validator("Betty", 18.2)
 Traceback (most recent call last):
-TypeError: string is not an integer, it must be an integer
+ValueError: string is not an integer, it must be an integer
 
 >>> bg.integer_vallidator("Betty", "Holberton")
 Traceback (most recent call last):
