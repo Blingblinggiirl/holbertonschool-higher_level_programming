@@ -53,7 +53,3 @@ TypeError: Betty must be an integer
 >>> bg.integer_validator("Betty", None)
 Traceback (most recent call last):
 TypeError: Betty must be an integer
-
->>> bg.integer_validator("age", True)
-Traceback (most recent call last):
-TypeError: age must be an integer
