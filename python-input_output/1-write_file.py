@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""     task 1: write a string to text file and 
+"""     task 1: write a string to text file and
         return num of chars
 """
 
