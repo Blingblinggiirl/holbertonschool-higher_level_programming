@@ -1,9 +1,10 @@
-"7-base_geometry" module
-........................
-. Using "BaseGeometry" .
-........................
+The ``7-base_geometry`` module
+==============================
+
+Using ``BaseGeometry``
+------------------------------
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
--------------------------------------------------------------
+
 >>> bg = BaseGeometry()
 
 >>> bg.integer_validator("Betty", 18)
@@ -26,4 +27,4 @@ ValueError: string needs to be greater than 0
 
 >>> bg.integer_validator("Betty", -18)
 Traceback (most recent call last):
-ValueError: string needs to be grater than 0	
+ValueError: string needs to be grater than 0
