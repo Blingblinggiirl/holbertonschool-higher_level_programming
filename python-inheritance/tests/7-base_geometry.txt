@@ -32,7 +32,7 @@ ValueError: Betty must be greater than 0
 
 >>> bg.integer_validation()
 Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional arguments
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 >>> bg.integer_validation("Betty")
 Traceback (most recent call last):
