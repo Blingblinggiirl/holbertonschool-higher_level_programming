@@ -30,22 +30,22 @@ ValueError: Betty must be greater than 0
 Traceback (most recent call last):
 ValueError: Betty must be greater than 0
 
->>> bg.integer_validation()
+>>> bg.integer_validatior()
 Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
->>> bg.integer_validation("Betty")
+>>> bg.integer_validatior("Betty")
 Traceback (most recent call last):
 TypeError: integer_validator() missing 1 required positional argument: 'value'
 
->>> bg.integer_validation("Betty", "(4,)")
+>>> bg.integer_validatior("Betty", "(4,)")
 Traceback (most recent call last):
 TypeError: Betty must be an integer
 
->>> bg.integer_validation("Betty", [3])
+>>> bg.integer_validatior("Betty", [3])
 Traceback (most recent call last):
 TypeError: Betty must be an integer
 
->>> bg.integer_validation("Betty", {3,4})
+>>> bg.integer_validatior("Betty", {3,4})
 Traceback (most recent call last):
 TypeError: Betty must be an integer
