@@ -19,7 +19,6 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """Class that define a new class based on BaseGeometry class"""
 
-
     def __init__(self, width, height):
         """To create a new instance"""
         self.integer_validator("width", width)
