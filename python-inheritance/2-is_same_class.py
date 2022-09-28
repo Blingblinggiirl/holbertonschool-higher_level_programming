@@ -4,4 +4,4 @@
 
 def is_same_class(obj, a_class):
     """rwturs Trye or false depending if is instance"""
-    return subclass(a_class, type(obj))
+    return issubclass(a_class, type(obj))
