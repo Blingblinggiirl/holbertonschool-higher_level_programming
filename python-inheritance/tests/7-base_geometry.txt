@@ -5,6 +5,7 @@ Using ``BaseGeometry``
 ------------------------------
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+Try it
 >>> bg = BaseGeometry()
 
 >>> bg.integer_validator("Betty", 18)
@@ -13,7 +14,7 @@ Using ``BaseGeometry``
 Traceback (most recent call last):
 Exception: area() is not implemented
 
->>> bg.integer_validator("Betty", 18.2)
+>>> bg.integer_validator("Betty", 3.2)
 Traceback (most recent call last):
 ValueError: string is not an integer, it must be an integer
 
