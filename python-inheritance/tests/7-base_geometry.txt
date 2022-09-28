@@ -20,12 +20,12 @@ TypeError: Betty must be an integer
 
 >>> bg.integer_vallidator("Betty", "Holberton")
 Traceback (most recent call last):
-TypeError: string is not an integer, it must be an integer
+TypeError: Betty is not an integer, it must be an integer
 
 >>> bg.integer_validator("Betty", 0)
 Traceback (most recent call last):
-ValueError: string needs to be greater than 0
+ValueError: Betty needs to be greater than 0
 
 >>> bg.integer_validator("Betty", -18)
 Traceback (most recent call last):
-ValueError: string needs to be grater than 0
+ValueError: Betty needs to be grater than 0
