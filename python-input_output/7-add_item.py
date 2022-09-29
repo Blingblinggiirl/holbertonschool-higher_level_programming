@@ -2,7 +2,7 @@
 """ 	task 7 		"""
 
 
-from sys import json
+import json from sys
 import os.path
 
 
