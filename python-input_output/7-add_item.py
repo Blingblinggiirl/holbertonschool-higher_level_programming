@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ 	task 7 		"""
 
-import json, sys, os.path
+from sys import json
+import os.path
 
 
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
