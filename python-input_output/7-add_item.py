@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 """task 7"""
 
-
-import json from sys
-"""import"""
-
-
+import sys
+import json
 import os.path
 
 
