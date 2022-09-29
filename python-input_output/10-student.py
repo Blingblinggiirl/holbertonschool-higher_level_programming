@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""task 10"""
-
-
+""" Task 10 class student and json
+"""
 
 class Student:
-    """ student """
+    """Class student """
     def __init__(self, first_name, last_name, age):
         self.first_name = first name
         self.last_name = last_name
