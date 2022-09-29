@@ -19,5 +19,5 @@ class Student:
         if type(attrs) is list:
             for i in attrs:
                 if hasattr(self, i):
-                    list_[i] = getattr(self, i)
+                    lista[i] = getattr(self, i)
             return lista
