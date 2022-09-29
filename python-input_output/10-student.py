@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Task 10 class student and json
+"""Task 10 class student and json
 """
 
 class Student:
