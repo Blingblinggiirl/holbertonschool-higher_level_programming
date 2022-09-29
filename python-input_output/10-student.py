@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" task 10 """
+"""task 10"""
+
 
 
 class Student:
@@ -10,6 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
+        """to json"""
         listt = {}
         self_dict = self.__dict__
 
