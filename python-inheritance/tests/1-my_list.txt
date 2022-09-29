@@ -2,9 +2,10 @@ test for MyList
 ..........................
 
 >>>MyList = __import__("1-my_list").MyList
+
 >>>MyList()
 []
-..........................................
+
 >>> lst = MyList()
 >>> lst.append(1)
 >>> lst.append(4)
@@ -13,7 +14,7 @@ test for MyList
 >>> lst.append(5)
 >>> lst.print_sorted()
 [1, 2, 3, 4, 5]
-.........................................
+
 >>> lst = MyList()
 >>> lst.append(-10)
 >>> lst.append(-20)
@@ -21,10 +22,9 @@ test for MyList
 >>> lst.append(-15)
 >>> lst.print_sorted()
 [-20, -15, -10, -3]
-........................................
+
 >>> lst = MyList()
 >>> lst.append(1)
 >>> lst.print_sorted()
 [1]
-.......................................
 
