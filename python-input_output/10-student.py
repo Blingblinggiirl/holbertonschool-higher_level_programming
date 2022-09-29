@@ -1,24 +1,23 @@
 #!/usr/bin/python3
-"""Class Student that defines a student """
+"""class Student that defines a student """
 
 
 class Student:
-    """Class student """
+    """A clas that defines a student"""
     def __init__(self, first_name, last_name, age):
-        self.first_name = first name
+        self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """to json"""
-        listt = {}
+        lista = {}
         self_dict = self.__dict__
 
         if attrs is None:
             return self_dict
-        elif type(attrs) is list:
+
+        if type(attrs) is list:
             for i in attrs:
                 if hasattr(self, i):
-                    listt[i] = getattr(self, i)
-            return listt
-
+                    list_[i] = getattr(self, i)
+            return lista
