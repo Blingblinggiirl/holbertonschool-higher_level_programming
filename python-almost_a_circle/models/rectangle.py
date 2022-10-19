@@ -1,4 +1,4 @@
-#!iusr/bin/python3
+#!/usr/bin/python3
 """
     class rectangle that inherits from Base
 """
