@@ -10,11 +10,11 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ init """
-        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
-        self.y = y
+        self.y = y  
+        super().__init__(id)
 
     @property
     def width(self):
@@ -23,7 +23,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
-        """ width setter """
+        """ setter """
         if type(width) != int:
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -37,7 +37,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
-        """ height setter """
+        """ setter """
         if type(height) != int:
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -51,6 +51,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+        """ setter """
         if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
@@ -59,14 +60,18 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ It returns the value of the private variable y. """
+        """ getter """
         return self.__y
 
     @y.setter
     def y(self, y):
-        """ y setter """
+        """ setter """
         if type(y) != int:
             raise TypeError("y must be an integer")
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+
+    def area(self):
+        """ return the area value of the Rectangle instance """
+        return width * height
