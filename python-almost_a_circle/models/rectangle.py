@@ -6,7 +6,7 @@
 from models.base import Base
 
 
-class rectangle(Base):
+class Rectangle(Base):
     """ Rectangle """
     @property 
     def width(self):
