@@ -11,6 +11,7 @@ class Rectangle(Base):
 
     def __init__(self,width, height, x=0, y=0, id=None):
         """init with super init so i can use thing initialized in Base """
+
         self.width = width
         self.height = height
         self.x = x
