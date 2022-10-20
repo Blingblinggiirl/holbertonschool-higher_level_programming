@@ -80,7 +80,7 @@ class Rectangle(Base):
         """display # """
         for height in range(self.__height):
             for width in range(self.width):
-                if width == self.__width:
+                if width == self.__width - 1:
                     print("#")
                 else:
                     print("#", end="")
