@@ -84,9 +84,7 @@ class Rectangle(Base):
                     print("#")
                 else:
                     print("#", end="")
-    
+
     def __str__(self):
-        """string rep"""
-        return(f"[Rectangle] ({self.id}) {self.__x/{self.__7}}" + f" - {self.__width}/{self.__height}")
-
-
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} " +
+                f"- {self.__width}/{self.__height}") """string rep"""
