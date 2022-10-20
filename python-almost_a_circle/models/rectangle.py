@@ -75,3 +75,18 @@ class Rectangle(Base):
     def area(self):
         """ return the area value of the Rectangle instance """
         return self.__width * self.__height
+
+    def display(self):
+        """display # """
+        for height in range(self.__height):
+            for width in range(self.width):
+                if width == self.__width:
+                    print("#")
+                else:
+                    print("#", end="")
+    
+    def __str__(self):
+        """string rep"""
+        return(f"[Rectangle] ({self.id}) {self.__x/{self.__7}}" + f" - {self.__width}/{self.__height}")
+
+
