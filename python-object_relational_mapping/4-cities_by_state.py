@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-script that lists all states with a name
-starting with N (upper N) from the 
-database hbtn_0e_0_usa
+script that lists all cities from the database hbtn_0e_4_usa
 """
 if __name__ == "__main__":
     import sys
@@ -20,14 +18,14 @@ if __name__ == "__main__":
         db=mysql_dbname)
 
     qry_cursor = my_db.cursor()
-    sql_request = """SELECT *
-                    FROM states
-                    WHERE name LIKE BINARY 'N%'
-                    ORDER BY states.id ASC"""
-    qry_cursor.execute(sql_request)
+    qry_cursor.execute("""SELECT c.id, c.name, s.name
+                        FROM cities c LEFT JOIN states s
+                        ON c.state_id = s.id
+                        ORDER BY c.id ASC""")
     records = qry_cursor.fetchall()
 
     for element in records:
         print(element)
 
     my_db.close()
+
