@@ -1,0 +1,4 @@
+Cases where code can fail and need to be test
+.................................................
+Area is not passed
+string is not int
