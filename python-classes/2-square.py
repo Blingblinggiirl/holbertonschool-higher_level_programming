@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Writing a Private instance attribute to class Square """
+""" Class Square with size validation """
 
 
 class Square():
