@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-""" Square """
+""" Writing a Private instance attribute to class Square """
 
 
-class Square:
-    """ Square with size validation """
-    def __init__(self, size=0):
-        """ init """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-	if size < 0:
-            raise ValueError("size must be >= 0")
+class Square():
+    """ class that defines a square """
+
+    def __init__(self, size):
+        """ difine the size of the square """
         self.__size = size
