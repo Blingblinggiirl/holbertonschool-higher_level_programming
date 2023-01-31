@@ -3,11 +3,9 @@
 
 
 class Square:
-    """Square with size validation
-    """
+    """ Square with size validation """
     def __init__(self, size=0):
-        """ init
-        """
+        """ init """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
 	if size < 0:
