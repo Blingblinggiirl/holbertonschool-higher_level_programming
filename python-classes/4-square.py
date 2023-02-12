@@ -1,29 +1,28 @@
 #!/usr/bin/python3
-""" Writing a Private instance attribute to class Square """
+"""Class Square"""
 
 
-class Square():
-    """ class that defines a square """
+class Square:
+    """square"""
 
     def __init__(self, size=0):
-        """ difine the size of the square """
-        self.__size = size
+        """This init a  class"""
+        self.size = size
 
     @property
     def size(self):
-        """ inicializando size """
-        self.__size
+        """getter"""
+        return self.__size
 
     @size.setter
     def size(self, value):
-        """ to set """
-
-        if not isinstance(value, int):
+        """setter"""
+        if type(value) != int:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     def area(self):
-        """ area """
-        return self.__size * 2
+        """square area"""
+        return (self.__size * self.__size)
