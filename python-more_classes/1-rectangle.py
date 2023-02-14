@@ -26,6 +26,3 @@ class Square:
         if value < 0:
             raise ValueError("width must be >= 0")
         self._width = value
-
-
-
