@@ -10,12 +10,12 @@ class Square:
     def __init__(self, width):
         """ to init """
 
-        self._width = width
+        self.__width = width
 
     @property
     def width(self):
         """ to get width """
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
