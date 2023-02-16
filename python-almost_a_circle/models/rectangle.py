@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-""" Rectangule using Base """
+""" class Rectangule """
 from models.base import Base
 
 
 class Rectangle(Base):
-    """ Rectangle """
+    """ rectangle """
     def __init__(self, width, height, x=0, y=0, id=None):
         if type(width) != int:
             raise TypeError("width must be an integer")
         if width <= 0:
             raise ValueError("width must be > 0")
-        self.__width = width
-	if type(height) != int:
+        else:
+            self.__width = width
+        if type(height) != int:
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
@@ -33,27 +34,27 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ getter """
+        """ to get """
         return self.__width
 
     @property
     def height(self):
-        """ getter """
+        """ to get """
         return self.__height
 
     @property
     def x(self):
-        """ getter """
+        """ to get """
         return self.__x
 
     @property
     def y(self):
-        """ getter """
+        """ to get """
         return self.__y
 
     @height.setter
     def height(self, value):
-        """ setter """
+        """ to set """
         if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -62,7 +63,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """ setter """
+        """ to set """
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -71,7 +72,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """ setter """
+        """ to set """
         if type(value) != int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -80,7 +81,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """ setter """
+        """ to set """
         if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
